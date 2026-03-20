@@ -549,6 +549,9 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* запрещает горизонтальную прокрутку */
+    }
     .hero h1 { font-size: 2.5rem; }
     .nav {
         display: flex;
@@ -556,6 +559,7 @@ footer {
         justify-content: center;
         gap: 15px;
         margin-top: 15px;
+        max-width: 100%; /* не даёт меню вылезать за пределы */
     }
     .header .container {
         flex-direction: column;
