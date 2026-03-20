@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="contact-links">
                     <a href="https://vk.com/shelvanpart" class="contact-link" target="_blank"><i class="fab fa-vk"></i> VK</a>
-                    <button class="contact-link" id="maxBtn"><i class="fas fa-comment"></i> MAX</button>
+                    <a href="#" class="contact-link" id="maxBtn"><i class="fas fa-users"></i> MAX</a>
                     <a href="https://funpay.com/users/17572519/" class="contact-link" target="_blank"><i class="fas fa-coins"></i> FunPay</a>
                 </div>
                 <div class="privacy-note">
@@ -54,8 +54,9 @@
 
     <script src="js/main.js"></script>
     <script>
-        document.getElementById('maxBtn').addEventListener('click', function() {
-            alert('Напишите мне в MAX по номеру:\n+7 123 456-78-90\n\nПосле выполнения заказа чат будет удалён для вашей приватности.');
+        document.getElementById('maxBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Напишите мне в MAX по нику @Whatuhall или вступите в группу по ссылке: https://max.ru/join/UU7hd8QmfA6c0M6AwAZKbOnb8UcUqktUwJkb7HkNfIk\n\nПосле выполнения заказа я удалю вас из группы.');
         });
     </script>
 </body>
