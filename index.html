@@ -4,72 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LootSite · создание сайтов</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
+    <header>
+        <div class="container">
+            <div class="logo">LootSite</div>
+            <nav>
+                <a href="index.html" class="active">Главная</a>
+                <a href="services.html">Услуги</a>
+                <a href="portfolio.html">Портфолио</a>
+                <a href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
             <div class="container">
-                <div class="header__inner">
-                    <div class="logo">LootSite</div>
-                    <nav class="nav">
-                        <a href="index.html" class="active">Главная</a>
-                        <a href="services.html">Услуги</a>
-                        <a href="portfolio.html">Портфолио</a>
-                        <a href="contact.html">Контакты</a>
-                    </nav>
+                <div class="badge">Работаю один — без посредников</div>
+                <h1>Создаю сайты, <span>которые приносят прибыль</span></h1>
+                <p>Лендинги, интернет-магазины, корпоративные сайты под ключ. Честно, без переплат, с душой.</p>
+                <a href="contact.html" class="btn">Обсудить проект</a>
+            </div>
+        </section>
+
+        <section class="news" id="news-section">
+            <div class="container">
+                <h2><i class="fas fa-newspaper"></i> Последние новости</h2>
+                <div class="news-grid" id="news-grid">
+                    <div class="loading">Загрузка новостей...</div>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <main>
-            <!-- Hero -->
-            <section class="hero">
-                <div class="container">
-                    <div class="hero__badge">Работаю один — без посредников</div>
-                    <h1 class="hero__title">Создаю сайты, <span>которые приносят прибыль</span></h1>
-                    <p class="hero__desc">Лендинги, интернет-магазины, корпоративные сайты под ключ. Честно, без переплат, с душой.</p>
-                    <a href="contact.html" class="btn btn--primary">Обсудить проект</a>
-                </div>
-            </section>
-
-            <!-- Новости -->
-            <section class="news">
-                <div class="container">
-                    <h2 class="section-title"><i class="fas fa-newspaper"></i> Последние новости</h2>
-                    <div class="news__grid" id="newsGrid">
-                        <div class="news__item placeholder">Загрузка новостей...</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Обо мне + призыв -->
-            <section class="about">
-                <div class="container about__grid">
-                    <div class="about__text">
-                        <h2><i class="fas fa-user-astronaut"></i> Обо мне</h2>
-                        <p>Я веб-разработчик, работаю в одиночку. Это значит, что вы общаетесь напрямую со мной — никаких менеджеров, посредников и лишних согласований. Каждый проект я делаю с душой, учитывая ваши пожелания. Результат — сайт, который работает на ваш бизнес.</p>
-                        <div class="stats">
-                            <div><span>10+</span> проектов</div>
-                            <div><span>100%</span> старания</div>
-                            <div><span>24/7</span> на связи</div>
-                        </div>
-                        <a href="contact.html" class="btn btn--outline">Заказать сайт →</a>
-                    </div>
-                    <div class="about__icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
+        <section class="about">
             <div class="container">
-                <p>© 2026 LootSite. Создание сайтов под ключ.</p>
+                <div class="about-text">
+                    <h2><i class="fas fa-user-astronaut"></i> Обо мне</h2>
+                    <p>Я веб-разработчик, работаю в одиночку. Это значит, что вы общаетесь напрямую со мной — никаких менеджеров, посредников и лишних согласований. Каждый проект я делаю с душой, учитывая ваши пожелания. Результат — сайт, который работает на ваш бизнес.</p>
+                    <div class="stats">
+                        <div><span>10+</span> проектов</div>
+                        <div><span>100%</span> старания</div>
+                        <div><span>24/7</span> на связи</div>
+                    </div>
+                    <a href="contact.html" class="btn outline">Заказать сайт →</a>
+                </div>
+                <div class="about-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
             </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 LootSite. Создание сайтов под ключ.</p>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
