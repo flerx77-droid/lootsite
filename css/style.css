@@ -123,7 +123,7 @@ body {
 
 .section-title {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -133,140 +133,149 @@ body {
     margin-right: 15px;
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-@media (max-width: 900px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 600px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.service-card {
-    background: #1a1a26;
-    border: 1px solid rgba(251,191,36,0.2);
-    border-radius: 40px;
-    padding: 40px 25px;
-    text-align: center;
-    transition: 0.3s;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.service-card:hover {
-    border-color: #fbbf24;
-    transform: translateY(-8px);
-    box-shadow: 0 20px 30px rgba(251,191,36,0.2);
-}
-
-.service-icon {
-    width: 80px;
-    height: 80px;
-    background: rgba(251,191,36,0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 25px;
-    font-size: 2.5rem;
-    color: #fbbf24;
-}
-
-.service-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-.service-card p {
-    color: #b0b0c0;
-    flex-grow: 1;
-}
-
-.service-features {
-    list-style: none;
-    margin: 20px 0;
-    text-align: left;
-    color: #b0b0c0;
-}
-
-.service-features li {
-    margin-bottom: 8px;
-}
-
-.service-features i {
-    color: #fbbf24;
-    margin-right: 10px;
-}
-
-.price-tag {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #fbbf24;
-    margin-top: 15px;
-}
-
-.advantages {
+/* Новости */
+.news-section {
     padding: 80px 0;
     background: #14141e;
 }
 
-.advantages-grid {
+.news-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
-@media (max-width: 1000px) {
-    .advantages-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 600px) {
-    .advantages-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.advantage-card {
+.news-card {
     background: #1a1a26;
     border: 1px solid rgba(251,191,36,0.2);
     border-radius: 30px;
-    padding: 35px 25px;
+    padding: 30px;
     transition: 0.3s;
-    height: 100%;
 }
 
-.advantage-card:hover {
+.news-card:hover {
     border-color: #fbbf24;
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(251,191,36,0.15);
 }
 
-.advantage-icon {
-    font-size: 2.3rem;
+.news-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
     color: #fbbf24;
+}
+
+.news-card .news-date {
+    font-size: 0.9rem;
+    color: #b0b0c0;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.news-card p {
+    color: #e0e0f0;
+}
+
+/* Обо мне */
+.about-me {
+    padding: 80px 0;
+}
+
+.about-grid {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.advantage-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 12px;
+.about-text h2 i {
+    color: #fbbf24;
+    margin-right: 10px;
 }
 
-.advantage-card p {
+.about-text p {
     color: #b0b0c0;
-    font-size: 1rem;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
 }
 
+.stats {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fbbf24;
+}
+
+.stat-label {
+    color: #b0b0c0;
+    font-size: 0.9rem;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image i {
+    font-size: 12rem;
+    color: #fbbf24;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 20px #fbbf24);
+}
+
+.btn {
+    display: inline-block;
+    background: #fbbf24;
+    color: #0e0e14;
+    padding: 14px 35px;
+    border-radius: 60px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(251,191,36,0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(251,191,36,0.6);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #fbbf24;
+    color: #fbbf24;
+    box-shadow: none;
+}
+
+.btn-secondary:hover {
+    background: #fbbf24;
+    color: #0e0e14;
+}
+
+/* Страницы услуг и портфолио */
 .page-hero {
     padding: 80px 0 40px;
     text-align: center;
@@ -282,6 +291,72 @@ body {
 .page-hero p {
     font-size: 1.2rem;
     color: #b0b0c0;
+}
+
+.services-detailed {
+    padding: 60px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: #1a1a26;
+    border: 1px solid rgba(251,191,36,0.2);
+    border-radius: 30px;
+    padding: 40px 30px;
+    transition: 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    border-color: #fbbf24;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(251,191,36,0.15);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #fbbf24;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #b0b0c0;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.service-features li {
+    margin-bottom: 10px;
+    color: #b0b0c0;
+}
+
+.service-features i {
+    color: #fbbf24;
+    margin-right: 10px;
+}
+
+.price-tag {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fbbf24;
+    margin-top: 10px;
 }
 
 .portfolio-grid-section {
@@ -369,26 +444,6 @@ body {
     color: #fbbf24;
 }
 
-.btn {
-    display: inline-block;
-    background: #fbbf24;
-    color: #0e0e14;
-    padding: 16px 45px;
-    border-radius: 60px;
-    font-weight: 700;
-    font-size: 1.2rem;
-    text-decoration: none;
-    box-shadow: 0 0 25px rgba(251,191,36,0.5);
-    transition: 0.3s;
-    border: none;
-    cursor: pointer;
-}
-
-.btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 35px rgba(251,191,36,0.8);
-}
-
 .footer {
     padding: 30px 0;
     border-top: 1px solid rgba(251,191,36,0.2);
@@ -396,9 +451,12 @@ body {
     color: #b0b0c0;
 }
 
+/* Адаптив */
 @media (max-width: 768px) {
-    .hero h1 { font-size: 3rem; }
+    .hero h1 { font-size: 2.8rem; }
     .nav { display: none; }
     .section-title { font-size: 2.2rem; }
+    .about-grid { flex-direction: column; text-align: center; }
+    .stats { justify-content: center; }
     .contact-link { padding: 14px 25px; }
 }

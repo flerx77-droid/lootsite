@@ -12,7 +12,7 @@
         <div class="container header-inner">
             <div class="logo">LootSite</div>
             <nav class="nav">
-                <a href="index.html">Главная</a>
+                <a href="index.html" class="active">Главная</a>
                 <a href="services.html">Услуги</a>
                 <a href="portfolio.html">Портфолио</a>
                 <a href="contact.html">Контакты</a>
@@ -29,53 +29,39 @@
         </div>
     </section>
 
-    <section class="services" id="services">
+    <!-- Блок новостей из Google Sheets -->
+    <section class="news-section">
         <div class="container">
-            <h2 class="section-title"><i class="fas fa-bolt"></i> Что я делаю</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-file-alt"></i></div>
-                    <h3>Лендинг</h3>
-                    <p>Продающая страница для товара или услуги. Быстро и эффективно.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-th-large"></i></div>
-                    <h3>Многостраничный</h3>
-                    <p>Корпоративный сайт, каталог, блог — любой сложности.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
-                    <h3>Интернет-магазин</h3>
-                    <p>Корзина, фильтры, карточки товаров — полноценная торговля.</p>
-                </div>
+            <h2 class="section-title"><i class="fas fa-newspaper"></i> Недавние новости</h2>
+            <div class="news-grid" id="newsGrid">
+                <div class="news-card loading">Загрузка новостей...</div>
             </div>
         </div>
     </section>
 
-    <section class="advantages">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-gift"></i> Что вы получите</h2>
-            <div class="advantages-grid">
-                <div class="advantage-card">
-                    <div class="advantage-icon"><i class="fas fa-user-check"></i></div>
-                    <h3>Личное общение</h3>
-                    <p>Я работаю один — вы общаетесь напрямую с разработчиком, без менеджеров. Все вопросы решаются за час.</p>
+    <section class="about-me">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2><i class="fas fa-user-astronaut"></i> Обо мне</h2>
+                <p>Привет! Я веб-разработчик. Создаю сайты под ключ, работаю один — поэтому общаешься напрямую со мной, без менеджеров. Каждый проект делаю с душой, учитывая все твои пожелания. Результат — сайт, который работает и приносит пользу.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">проектов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">старания</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">на связи</span>
+                    </div>
                 </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon"><i class="fas fa-rocket"></i></div>
-                    <h3>Быстрый старт</h3>
-                    <p>От идеи до готового сайта в среднем 3–5 дней. Срочные заказы делаю за 24 часа.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon"><i class="fas fa-hand-holding-heart"></i></div>
-                    <h3>Честные цены</h3>
-                    <p>Никаких скрытых платежей. Цена фиксируется до начала работы и не меняется.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon"><i class="fas fa-headset"></i></div>
-                    <h3>Поддержка после сдачи</h3>
-                    <p>Я не бросаю клиентов — помогаю с правками, отвечаю на вопросы, даже когда проект готов.</p>
-                </div>
+                <a href="contact.html" class="btn btn-secondary">Заказать сайт</a>
+            </div>
+            <div class="about-image">
+                <i class="fas fa-code"></i>
             </div>
         </div>
     </section>
