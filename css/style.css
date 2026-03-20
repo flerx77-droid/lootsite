@@ -559,3 +559,19 @@ footer {
     .cursor { display: none; }
     .about-card { flex-direction: column; text-align: center; }
 }
+
+/* Блок приватности для контактов */
+.privacy-note {
+    background: rgba(251, 191, 36, 0.1);
+    border-left: 3px solid #fbbf24;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin: 20px auto 0;
+    max-width: 500px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.privacy-note i {
+    margin-right: 8px;
+    color: #fbbf24;
+}
