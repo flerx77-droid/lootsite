@@ -550,14 +550,23 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 { font-size: 2.5rem; }
-    nav { display: none; }
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
     .stats { justify-content: center; }
     .about .container { flex-direction: column; text-align: center; }
     .about-icon i { font-size: 8rem; }
     .contact-link { padding: 12px 25px; }
     .faq-question { font-size: 1rem; }
     .cursor { display: none; }
-    .about-card { flex-direction: column; text-align: center; }
 }
 
 /* Блок приватности для контактов */
