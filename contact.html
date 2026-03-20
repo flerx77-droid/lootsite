@@ -35,12 +35,13 @@
             <div class="container">
                 <div class="contact-links">
                     <a href="https://vk.com/shelvanpart" class="contact-link" target="_blank"><i class="fab fa-vk"></i> VK</a>
-                    <a href="https://max.ru/join/UU7hd8QmfA6c0M6AwAZKbOnb8UcUqktUwJkb7HkNfIk" class="contact-link" target="_blank"><i class="fas fa-users"></i> MAX</a>
+                    <button class="contact-link" id="maxBtn"><i class="fas fa-comment"></i> MAX</button>
+                    <a href="https://funpay.com/users/17572519/" class="contact-link" target="_blank"><i class="fas fa-coins"></i> FunPay</a>
                 </div>
                 <div class="privacy-note">
                     <i class="fas fa-shield-alt"></i> После завершения заказа я удаляю вас из группы в MAX — для сохранения приватности.
                 </div>
-                <p class="contact-note"><i class="fas fa-star"></i> Пишите в VK или вступайте в группу MAX. После выполнения работы участники удаляются из группы.</p>
+                <p class="contact-note"><i class="fas fa-star"></i> Пишите в VK, FunPay или через MAX — отвечу быстро.</p>
             </div>
         </section>
     </main>
@@ -52,5 +53,10 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        document.getElementById('maxBtn').addEventListener('click', function() {
+            alert('Напишите мне в MAX по номеру:\n+7 123 456-78-90\n\nПосле выполнения заказа чат будет удалён для вашей приватности.');
+        });
+    </script>
 </body>
 </html>
