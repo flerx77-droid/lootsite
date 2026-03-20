@@ -34,10 +34,15 @@
         <section class="contact">
             <div class="container">
                 <div class="contact-links">
-                    <a href="https://funpay.com/users/19303198/" class="contact-link" target="_blank"><i class="fas fa-coins"></i> FunPay</a>
                     <a href="https://vk.com/shelvanpart" class="contact-link" target="_blank"><i class="fab fa-vk"></i> VK</a>
+                    <a href="#" class="contact-link" id="maxLink"><i class="fas fa-comment"></i> MAX</a>
                 </div>
-                <p class="contact-note"><i class="fas fa-star"></i> Пишите в FunPay или ВКонтакте – отвечу быстро.</p>
+                <div class="contact-phone" style="text-align: center; margin-top: 20px;">
+                    <p><i class="fas fa-phone-alt"></i> Или напишите в MAX по номеру:</p>
+                    <p style="font-size: 1.5rem; font-weight: bold; color: #fbbf24;">+7 123 456-78-90</p>
+                    <p style="font-size: 0.9rem; color: #b0b0c0;">(замените на свой номер)</p>
+                </div>
+                <p class="contact-note"><i class="fas fa-star"></i> Пишите в VK или MAX — отвечу быстро.</p>
             </div>
         </section>
     </main>
@@ -49,5 +54,12 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Подсказка для MAX (так как пока нет прямой ссылки на профиль)
+        document.getElementById('maxLink')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Напишите мне в MAX по номеру телефона:\n+7 123 456-78-90\n\nСкопируйте номер и вставьте в поиск в приложении MAX.');
+        });
+    </script>
 </body>
 </html>
