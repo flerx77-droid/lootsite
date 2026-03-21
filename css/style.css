@@ -608,3 +608,89 @@ footer {
     margin-right: 8px;
     color: #fbbf24;
 }
+/* Бургер-меню */
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 110;
+}
+.burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px 0;
+    transition: 0.2s;
+    border-radius: 2px;
+}
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .header .container {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .burger {
+        display: block;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 280px;
+        height: 100vh;
+        background: #0f0f1a;
+        backdrop-filter: blur(12px);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 30px;
+        gap: 20px;
+        transition: right 0.3s ease;
+        z-index: 105;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.5);
+    }
+    nav.open {
+        right: 0;
+    }
+    nav a {
+        font-size: 1.3rem;
+        padding: 10px 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(251,191,36,0.2);
+    }
+    nav a::after {
+        display: none;
+    }
+    nav a:hover {
+        background: rgba(251,191,36,0.1);
+        padding-left: 10px;
+    }
+    .hero h1 { font-size: 2.5rem; }
+    .stats { justify-content: center; }
+    .about .container { flex-direction: column; text-align: center; }
+    .about-icon i { font-size: 8rem; }
+    .contact-link { padding: 12px 20px; font-size: 1rem; white-space: nowrap; }
+    .contact-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .faq-question { font-size: 1rem; }
+    .cursor { display: none; }
+}
