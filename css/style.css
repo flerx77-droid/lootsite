@@ -559,7 +559,7 @@ footer {
         justify-content: center;
         gap: 15px;
         margin-top: 15px;
-        max-width: 100%; /* не даёт меню вылезать за пределы */
+        max-width: 100%;
     }
     .header .container {
         flex-direction: column;
@@ -568,7 +568,16 @@ footer {
     .stats { justify-content: center; }
     .about .container { flex-direction: column; text-align: center; }
     .about-icon i { font-size: 8rem; }
-    .contact-link { padding: 12px 25px; }
+    .contact-link { 
+        padding: 12px 20px; 
+        font-size: 1rem;
+    }
+    .contact-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        max-width: 100%;
+    }
     .faq-question { font-size: 1rem; }
     .cursor { display: none; }
 }
